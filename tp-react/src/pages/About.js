@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Logo />
       <Navigation />
-      <p>blablabla</p>
+      <p>About</p>
     </div>
   );
 };
