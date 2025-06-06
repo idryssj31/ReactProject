@@ -10,7 +10,9 @@ const Countries = () => {
 
   useEffect(() => {
     axios
-      .get("https://restcountries.com/v3.1/all")
+      .get(
+        "https://restcountries.com/v3.1/all?fields=name,flags,population,capital,continents,cca3,translations"
+      )
       .then((res) => setData(res.data));
   }, []);
   return (
